@@ -1,0 +1,1 @@
+https://samples.openweathermap.org/data/2.5/weather?q=iraq,uk&callback=test&appid=cef0fdd91edd705c4171e7dec2f8ebf1
