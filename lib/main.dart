@@ -11,10 +11,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
       home: Scaffold(
         resizeToAvoidBottomInset: false,
         backgroundColor: Colors.grey[200],
@@ -70,18 +66,32 @@ class  SearchPage  extends StatelessWidget  {
                         Radius.circular(10)
                         ),
                       borderSide: BorderSide(
-                        color: Colors.blue ,
+                        color: Colors.black ,
                         style: BorderStyle.solid
                       )
                     ) ,
                     hintText:  "City Name" ,
                     helperStyle: TextStyle(
-                      color: Colors.black54 ,
+                      color: Colors.black ,
                     )
                 ),
                 style: TextStyle(
-                  color: Colors.black38
+                  color: Colors.black
                 ),
+               ) ,
+               SizedBox(height: 50,) ,
+               Container(
+                 width: double.infinity,
+                 height: 50,
+                  child: FlatButton(
+                   shape:  new RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(10)) ,
+                   ),
+                   onPressed: (){},
+                   child: Text('Search' , style:TextStyle(color: Colors.white ,),),
+                   color: Colors.blue,
+                    ),
+
                )
             ],
           ),
